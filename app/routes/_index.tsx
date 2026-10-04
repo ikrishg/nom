@@ -26,7 +26,7 @@ export function meta({}: Route.MetaArgs) {
     { name: "og:url", content: "https://nom.krishg.com" },
     { name: "og:site_name", content: "Nom Nom Nom" },
     { name: "og:locale", content: "en_US" },
-    { name: "twitter:creator", content: "@kkrishguptaa" },
+    { name: "twitter:creator", content: "@ikrishg" },
     { name: "twitter:card", content: "summary_large_image" },
     {
       name: "twitter:title",
