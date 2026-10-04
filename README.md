@@ -1,43 +1,16 @@
-<div align="center">
-<div><img src="https://github.com/kkrishguptaa/nom/raw/main/public/favicon.svg" alt="Nom logo" width="96" height="96"></div>
-<h1>Nom</h1>
-<p>How much do I love your name? ✨</p>
-</div>
+# Nom
 
-## Try it out
+Toy web app: type a name and get a playful “how much I love this name” score, with a breakdown of which letters and patterns contributed (`app/lib/nom-lover.ts`).
 
-[![Demo of Nom](https://github.com/kkrishguptaa/nom/raw/main/.github/demo.gif)](https://nom.krishg.com)
+**Live:** [nom.krishg.com](https://nom.krishg.com)
 
-Here's the live demo of the app. You can try it out [here](https://nom.krishg.com).
+## Run locally
 
-Live demo: [nom.krishg.com](https://nom.krishg.com)
-
-## Build With
-
-- [React](https://reactjs.org/)
-- [React Router](https://reactrouter.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Bun](https://bun.sh/)
-
-## Getting Started
-
-This project is built with [Bun](https://bun.sh). You need to have Bun installed to run this project. If you don't have it installed, you can follow the [Bun installation guide](https://bun.sh/docs/installation).
-
-### Installation
-
-Install the dependencies:
+Requires [Bun](https://bun.sh/).
 
 ```bash
 bun install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
 bun run dev
 ```
 
-The application will be available at `http://localhost:5173`.
+Dev server: `http://localhost:5173`. Production build: `bun run build` (static client output in `build/client`, used by the GitHub Pages workflow).

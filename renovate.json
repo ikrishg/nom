@@ -2,6 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabled": false,
   "extends": [
-    "github>kkrishguptaa/config-renovate"
+    "github>ikrishg/config-renovate"
   ]
 }
