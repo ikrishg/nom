@@ -8,12 +8,13 @@ How much do I love your name? Type a name and Nom gives it a score, then shows w
 
 The scoring lives in `app/lib/nom-lover.ts`. Each name is scored from:
 
-- **Vowels:** for example, `a` and `e` add 10, `u` adds nothing.
-- **Consonants:** for example, `k` adds 25, `n` and `t` add 10, `q` and `x` take away 2.
+- **Letters:** each vowel and consonant has its own score. For example, `a` and `e` add 10, `k` adds 25, `n` and `t` add 10, and `q` and `x` take away 2.
+- **Adjacent vowels and adjacent consonants:** two vowels or two consonants side by side add the product of their scores. The `nn` in `Anna` adds 100.
 - **Letter combinations:** clusters such as `bb`, `sch` or `rst` take away points.
-- **Repeated combinations** and **the first letter** also count.
+- **Pairs of combinations:** two different combinations next to each other also count.
+- **First letter:** some starting letters add or take away points.
 
-The breakdown lists every rule that fired, with its score and position in the name. It's a toy, so the numbers are opinion, not science.
+The breakdown lists every rule with a nonzero score, with where it matched in the name. Rules that score zero, such as the letter `u`, are left out. It's a toy, so the numbers are opinion, not science.
 
 ## Stack
 
